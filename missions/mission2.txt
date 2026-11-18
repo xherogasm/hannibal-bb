@@ -1,0 +1,8 @@
+MISSION 2 — Recon & attack-surface mapping (Cybersécurité / Cloud)
+Cible AUTORISÉE (démo) : https://example.com
+1) Utilise http_fingerprint pour relever le statut + les en-têtes de sécurité (CSP, HSTS,
+   X-Frame-Options, CORS, cookies).
+2) À partir de ce que tu vois + ta base de connaissances, dresse une matrice "surface ×
+   classes de bugs candidates" (quels bugs ce type de surface pourrait porter).
+3) Propose un plan de test IDOR-first (le moins cher, le plus haut impact) avec les
+   premières requêtes concrètes à essayer. Rappelle la règle d'autorisation d'abord.

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" font-family="'Trebuchet MS','DejaVu Sans',Arial,sans-serif">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd37a"/>
+      <stop offset="1" stop-color="#f5a623"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="880" height="260" rx="22" fill="#0d0d0f"/>
+  <rect x="3" y="3" width="874" height="254" rx="20" fill="none" stroke="#f5a623" stroke-opacity="0.35" stroke-width="2"/>
+
+  <!-- ===== emblem (Spartan shield + crossed spears + crest) ===== -->
+  <g transform="translate(132,130)">
+    <!-- crossed spears -->
+    <g stroke="url(#gold)" stroke-width="7" stroke-linecap="round">
+      <line x1="-92" y1="-92" x2="92" y2="92"/>
+      <line x1="92" y1="-92" x2="-92" y2="92"/>
+    </g>
+    <!-- spearheads -->
+    <path d="M-92,-92 l22,4 l-4,-22 z" fill="url(#gold)"/>
+    <path d="M92,-92 l-22,4 l4,-22 z" fill="url(#gold)"/>
+    <!-- helmet crest / plume over the shield -->
+    <path d="M-70,-66 q70,-54 140,0 q-20,-20 -70,-20 q-50,0 -70,20 z" fill="#e23d4b"/>
+    <!-- shield -->
+    <circle r="84" fill="#141417" stroke="url(#gold)" stroke-width="8"/>
+    <circle r="72" fill="none" stroke="#e23d4b" stroke-opacity="0.65" stroke-width="2.5"/>
+    <!-- Spartan lambda -->
+    <text x="0" y="46" text-anchor="middle" font-size="128" font-weight="bold" fill="#e23d4b">&#923;</text>
+  </g>
+
+  <!-- ===== wordmark ===== -->
+  <text x="258" y="112" font-size="74" font-weight="bold" fill="url(#gold)" letter-spacing="2">HANNIBAL<tspan fill="#e23d4b">·BB</tspan></text>
+  <rect x="260" y="128" width="470" height="4" rx="2" fill="#e23d4b"/>
+  <text x="262" y="168" font-size="25" fill="#d9c6a5">the war-elephant bug-bounty agent</text>
+  <text x="262" y="206" font-size="19" fill="#f5a623" letter-spacing="1.5">&#9876; &#924;&#927;&#923;&#937;&#925; &#923;&#913;&#914;&#917; &#9876;  &#183;  come and take the ceiling</text>
+</svg>

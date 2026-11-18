@@ -1,0 +1,9 @@
+MISSION 3 — Chaînage jusqu'au plafond de sévérité (Cloud / Azure)
+Contexte : une application hébergée sur Azure expose une fonctionnalité "webhook" qui va
+chercher une URL fournie par l'utilisateur (feature "import from URL").
+1) Utilise search_knowledge et query_arsenal pour sortir la carte SSRF et les CVEs liées.
+2) Explique EXACTEMENT comment tu escaladerais ça au plus haut impact sur Azure (quels
+   tests, quel endpoint metadata Azure, quels bypass de filtre IP).
+3) Donne la chaîne A→B→C jusqu'au plafond (SSRF → metadata → identité managée → ...),
+   le CVSS 3.1 attendu (score + vecteur) et l'emoji de sévérité.
+4) Rappelle les 4 gates de validation avant de considérer ça comme ⭐ confirmé.

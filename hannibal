@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Run HannibalBB straight from the repo:  ./hannibal
+exec python3 "$(cd "$(dirname "$0")" && pwd)/hannibal.py" "$@"

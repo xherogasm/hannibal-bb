@@ -1,0 +1,37 @@
+# HannibalBB — Dynamic Arsenal: CVE / technique feeds the agent watches.
+# learn_cve.py ingests these, classifies each item into a bug class, and writes a
+# Bug Card record into cards.json (+ appends notes to knowledge/<class>.md).
+
+feeds:
+  - name: CIRCL-last
+    type: json
+    url: https://cve.circl.lu/api/last
+    note: most recent published CVEs (primary live source)
+
+  - name: NVD-recent
+    type: json
+    url: https://services.nvd.nist.gov/rest/json/cves/2.0?resultsPerPage=40
+    note: official NIST feed (API key optional, higher rate with one)
+
+  # Reference sources the operator/agent mines manually during the deep-research loop:
+  - name: GitHub-Advisories
+    type: ref
+    url: https://github.com/advisories
+  - name: PortSwigger-Research
+    type: ref
+    url: https://portswigger.net/research
+  - name: nuclei-templates
+    type: ref
+    url: https://github.com/projectdiscovery/nuclei-templates
+  - name: ExploitDB
+    type: ref
+    url: https://www.exploit-db.com/
+  - name: HackerOne-Hacktivity
+    type: ref
+    url: https://hackerone.com/hacktivity
+  - name: Patchstack-WP
+    type: ref
+    url: https://patchstack.com/database/
+
+# What the agent LEARNS per item (written into each card record):
+learn_fields: [class, severity_ceiling, spot_tests, exploit_tests, bypass_notes, chain_map]

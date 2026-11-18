@@ -1,0 +1,5 @@
+MISSION 1 — SOC log triage (Cybersécurité)
+Analyse le fichier missions/auth.log fourni. Utilise ton outil analyze_auth_log.
+1) Identifie les 3 adresses IP les plus suspectes (brute-force SSH) et classe-les.
+2) Dis quel(s) compte(s) sont ciblés.
+3) Rédige un court rapport d'incident EN FRANÇAIS, structuré (résumé, IOC, sévérité, reco).

@@ -1,0 +1,10 @@
+# runtime / local state — never commit
+config/
+memory/
+missions/cache/
+__pycache__/
+*.pyc
+*.cast
+# keep the shipped demo gif, ignore any you record locally
+demo.gif
+demo.mp4
