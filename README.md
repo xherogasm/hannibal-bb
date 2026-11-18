@@ -23,7 +23,7 @@
 ## ⚡ Quick start
 
 ```bash
-git clone https://github.com/<you>/hannibal-bb.git
+git clone https://github.com/xherogasm/hannibal-bb.git
 cd hannibal-bb
 ./install.sh          # installs deps + the `hannibal` command (no sudo)
 hannibal              # launch the agent interface
